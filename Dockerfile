@@ -50,7 +50,7 @@ RUN \
 #    && if [[ "${BUILD_ARCH}" = "arm32v6" ]]; then S6_ARCH="armhf"; else S6_ARCH="${BUILD_ARCH}"; fi \
 #    \
     && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-aarch64.tar.gz" \
-        | tar zxf - -C / \
+        | tar zxf - -C / 
 #    \
 #    && apk del --purge .build-dependencies \
 #    \
