@@ -1,5 +1,5 @@
 # ARG BUILD_FROM=arm32v6/alpine:3.12
-FROM arm32v7/alpine:3.12
+FROM arm32v6/alpine:3.12
 #
 # Build arguments
 # ARG BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%SZ")
@@ -49,12 +49,12 @@ RUN \
     \
 #    && if [[ "${BUILD_ARCH}" = "arm32v6" ]]; then S6_ARCH="armhf"; else S6_ARCH="${BUILD_ARCH}"; fi \
 #    \
-    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-armhf.tar.gz" \
-        | tar zxf - -C / \
-    \
-    && apk del --purge .build-dependencies \
-    \
-    && rm -f -r /tmp/*
+#    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-armhf.tar.gz" \
+#        | tar zxf - -C / \
+#    \
+#    && apk del --purge .build-dependencies \
+#    \
+#    && rm -f -r /tmp/*
 
 # Environment variables
 # ENV BUILD_VERSION ${BUILD_VERSION}
