@@ -29,24 +29,24 @@ FROM arm32v6/alpine:3.12
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         tar \
-    \
-    && apk add --no-cache \
-        apk-tools \
-        bash \
-        busybox \
-        ca-certificates \
-        curl \
-        musl-utils \
-        musl \
-        tzdata \
-        nginx \
-        php7-curl \
-        php7-fpm \
-        php7-json \
-        php7-session \
-        php7-zip \
-        php7 \
-    \
+#    \
+#    && apk add --no-cache \
+#        apk-tools \
+#        bash \
+#        busybox \
+#        ca-certificates \
+#        curl \
+#        musl-utils \
+#        musl \
+#        tzdata \
+#        nginx \
+#        php7-curl \
+#        php7-fpm \
+#        php7-json \
+#        php7-session \
+#        php7-zip \
+#        php7 \
+#    \
 #    && if [[ "${BUILD_ARCH}" = "arm32v6" ]]; then S6_ARCH="armhf"; else S6_ARCH="${BUILD_ARCH}"; fi \
 #    \
 #    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-armhf.tar.gz" \
