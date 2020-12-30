@@ -1,5 +1,3 @@
 #!/bin/bash
 # downloads a local copy of qemu on docker-hub build machines
-pushd /tmp &&
-curl -L -o qemu-aarch64-static.tar.gz https://github.com/multiarch/qemu-user-static/releases/download/v5.2.0-1/qemu-aarch64-static.tar.gz && tar xzf qemu-aarch64-static.tar.gz &&
-popd
+curl -L -o qemu-aarch64-static.tar.gz https://github.com/multiarch/qemu-user-static/releases/download/v5.2.0-1/qemu-aarch64-static.tar.gz && tar xzf qemu-aarch64-static.tar.gz
