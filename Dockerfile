@@ -29,7 +29,7 @@ FROM arm32v6/alpine:3.12
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         tar \
-#    \
+    \
 #    && apk add --no-cache \
 #        apk-tools \
 #        bash \
