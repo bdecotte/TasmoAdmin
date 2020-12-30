@@ -1,20 +1,20 @@
 # ARG BUILD_FROM=arm32v6/alpine:3.12
 FROM alpine:3.12
-
+#
 # Build arguments
 # ARG BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%SZ")
 # ARG BUILD_REF
 # ARG BUILD_VERSION
-
+#
 # Label
-LABEL \
+#LABEL \
 #    maintainer1="Reloxx <reloxx@interia.pl>" \
 #    maintainer2="Raymond M Mouthaan <raymondmmouthaan@gmail.com>" \
 #    org.label-schema.build-date=${BUILD_DATE} \
-    org.label-schema.license="GNU" \
-    org.label-schema.name="TasmoAdmin" \
+#    org.label-schema.license="GNU" \
+#    org.label-schema.name="TasmoAdmin" \
 #    org.label-schema.version=${BUILD_VERSION} \
-    org.label-schema.description="TasmoAdmin - An administrative Website for Devices flashed with Tasmota firmware." \
+#    org.label-schema.description="TasmoAdmin - An administrative Website for Devices flashed with Tasmota firmware." \
 #    org.label-schema.url="https://github.com/reloxx13/TasmoAdmin" \
 #    org.label-schema.usage="https://github.com/reloxx13/TasmoAdmin/blob/master/README.md" \
 #    org.label-schema.vcs-ref=${BUILD_REF} \
