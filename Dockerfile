@@ -8,17 +8,17 @@ FROM ${BUILD_FROM}
 
 # Label
 LABEL \
-    maintainer1="Reloxx <reloxx@interia.pl>" \
-    maintainer2="Raymond M Mouthaan <raymondmmouthaan@gmail.com>" \
+#    maintainer1="Reloxx <reloxx@interia.pl>" \
+#    maintainer2="Raymond M Mouthaan <raymondmmouthaan@gmail.com>" \
 #    org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.license="GNU" \
     org.label-schema.name="TasmoAdmin" \
 #    org.label-schema.version=${BUILD_VERSION} \
     org.label-schema.description="TasmoAdmin - An administrative Website for Devices flashed with Tasmota firmware." \
-    org.label-schema.url="https://github.com/reloxx13/TasmoAdmin" \
-    org.label-schema.usage="https://github.com/reloxx13/TasmoAdmin/blob/master/README.md" \
+#    org.label-schema.url="https://github.com/reloxx13/TasmoAdmin" \
+#    org.label-schema.usage="https://github.com/reloxx13/TasmoAdmin/blob/master/README.md" \
 #    org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/reloxx13/TasmoAdmin"
+#    org.label-schema.vcs-url="https://github.com/reloxx13/TasmoAdmin"
 
 # Setup Qemu
 # ARG QEMU_ARCH
@@ -47,9 +47,9 @@ RUN \
         php7-zip \
         php7 \
     \
-    && if [[ "${BUILD_ARCH}" = "arm32v6" ]]; then S6_ARCH="armhf"; else S6_ARCH="${BUILD_ARCH}"; fi \
-    \
-    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.0.0.1/s6-overlay-${S6_ARCH}.tar.gz" \
+#    && if [[ "${BUILD_ARCH}" = "arm32v6" ]]; then S6_ARCH="armhf"; else S6_ARCH="${BUILD_ARCH}"; fi \
+#    \
+    && curl -L -s "https://github.com/just-containers/s6-overlay/releases/download/v2.1.0.2/s6-overlay-armhf.tar.gz" \
         | tar zxf - -C / \
     \
     && apk del --purge .build-dependencies \
