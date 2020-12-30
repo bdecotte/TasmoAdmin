@@ -1,5 +1,5 @@
-ARG BUILD_FROM=arm32v6/alpine:3.12
-FROM ${BUILD_FROM}
+# ARG BUILD_FROM=arm32v6/alpine:3.12
+# FROM ${BUILD_FROM}
 
 # Build arguments
 # ARG BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%SZ")
