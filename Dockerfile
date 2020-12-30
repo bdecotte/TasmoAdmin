@@ -1,5 +1,5 @@
 # ARG BUILD_FROM=arm32v6/alpine:3.12
-FROM arm32v6/alpine:3.12
+FROM arm64v8/alpine:3.12
 #
 # Build arguments
 # ARG BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%SZ")
