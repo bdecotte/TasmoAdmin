@@ -28,8 +28,8 @@ FROM arm32v6/alpine:3.12
 # ARG BUILD_ARCH=arm32v6
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        tar \
-    \
+        tar 
+#    \
 #    && apk add --no-cache \
 #        apk-tools \
 #        bash \
