@@ -1,5 +1,5 @@
 # ARG BUILD_FROM=arm32v6/alpine:3.12
-FROM arm32v6/alpine:3.12
+FROM arm32v7/alpine:3.12
 #
 # Build arguments
 # ARG BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%SZ")
@@ -21,9 +21,9 @@ FROM arm32v6/alpine:3.12
 #    org.label-schema.vcs-url="https://github.com/reloxx13/TasmoAdmin"
 
 # Setup Qemu
-ARG QEMU_ARCH=arm
-COPY tmp/qemu-${QEMU_ARCH}-static /usr/bin/qemu-${QEMU_ARCH}-static
-
+# ARG QEMU_ARCH=arm
+# COPY tmp/qemu-${QEMU_ARCH}-static /usr/bin/qemu-${QEMU_ARCH}-static
+#
 # Install base system
 # ARG BUILD_ARCH=arm32v6
 RUN \
