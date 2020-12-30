@@ -28,7 +28,7 @@ COPY qemu-${QEMU_ARCH}-static /usr/bin/qemu-${QEMU_ARCH}-static
 # ARG BUILD_ARCH=arm32v6
 RUN \
     apk add --no-cache \
-        tar 
+        tar \
     \
     && apk add --no-cache \
         apk-tools \
