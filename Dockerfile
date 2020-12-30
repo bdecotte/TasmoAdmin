@@ -25,7 +25,7 @@ LABEL \
 # COPY tmp/qemu-${QEMU_ARCH}-static /usr/bin/qemu-${QEMU_ARCH}-static
 
 # Install base system
-ARG BUILD_ARCH=arm32v6
+# ARG BUILD_ARCH=arm32v6
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         tar \
@@ -59,7 +59,7 @@ RUN \
 # Environment variables
 # ENV BUILD_VERSION ${BUILD_VERSION}
 # ENV BUILD_REF ${BUILD_REF}
-ENV SSL false
+# ENV SSL false
 
 # RUN echo "fastcgi_param BUILD_VERSION ${BUILD_VERSION};" >> /etc/nginx/fastcgi_params
 # RUN echo "fastcgi_param BUILD_REF ${BUILD_REF};" >> /etc/nginx/fastcgi_params
