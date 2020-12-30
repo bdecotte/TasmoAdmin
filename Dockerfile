@@ -22,7 +22,7 @@ FROM arm64v8/alpine:3.12
 
 # Setup Qemu
 ARG QEMU_ARCH=aarch64
-COPY /tmp/qemu-${QEMU_ARCH}-static /usr/bin/qemu-${QEMU_ARCH}-static
+COPY qemu-${QEMU_ARCH}-static /usr/bin/qemu-${QEMU_ARCH}-static
 #
 # Install base system
 # ARG BUILD_ARCH=arm32v6
