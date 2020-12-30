@@ -1,5 +1,5 @@
 # ARG BUILD_FROM=arm32v6/alpine:3.12
-FROM alpine:3.12
+FROM arm64v8/alpine:3.12
 #
 # Build arguments
 # ARG BUILD_DATE=$(date +"%Y-%m-%dT%H:%M:%SZ")
@@ -27,7 +27,7 @@ FROM alpine:3.12
 # Install base system
 # ARG BUILD_ARCH=arm32v6
 RUN \
-    apk add --no-cache --virtual .build-dependencies \
+    apk add --no-cache \
         tar 
 #    \
 #    && apk add --no-cache \
