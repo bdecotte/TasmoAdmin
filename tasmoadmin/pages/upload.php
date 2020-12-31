@@ -50,7 +50,7 @@ if (isset($_REQUEST["upload"])) {
 			}
 			
 			if ($_FILES['minimal_firmware']["type"] == "application/octet-stream"
-				|| $_FILES['minimal_firmware']["type"] == "application/gzip") {
+				|| $_FILES['minimal_firmware']["type"] == "application/x-gzip") {
 				$ext = "bin";
 			}
 			else {
@@ -118,7 +118,7 @@ if (isset($_REQUEST["upload"])) {
 			throw new RuntimeException(__("UPLOAD_FIRMWARE_FULL_TOO_BIG", "DEVICE_UPDATE"));
 		}
 		if ($_FILES['new_firmware']["type"] == "application/octet-stream"
-			|| $_FILES['new_firmware']["type"] == "application/gzip") {
+			|| $_FILES['new_firmware']["type"] == "application/x-gzip") {
 			$ext = "bin";
 		}
 		else {
